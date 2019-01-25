@@ -24,13 +24,13 @@ class CreateMagasinTable extends Migration
             $table->string('photo1',45);
             $table->string('photo2',45);
             $table->integer('idCategorie')->unsigned();
-            $table->foreign('idCategorie')->references('idCategorie')->on('categories');
+            $table->foreign('idCategorie')->references('idCategorie')->on('categorie');
             $table->integer('idType')->unsigned();
-            $table->foreign('idType')->references('idType')->on('types');
+            $table->foreign('idType')->references('idType')->on('type');
             $table->integer('idville')->unsigned();
-            $table->foreign('idville')->references('idville')->on('villes');
+            $table->foreign('idville')->references('idville')->on('ville');
             $table->integer('idResponsable')->unsigned();
-            $table->foreign('idResponsable')->references('idResponsable')->on('responsables');
+            $table->foreign('idResponsable')->references('idResponsable')->on('responsable');
 
             $table->timestamps();
         });

@@ -14,7 +14,14 @@ class CreateResponsableTable extends Migration
     public function up()
     {
         Schema::create('responsable', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('idResponsable');
+            $table->string('nomResponsable',45);
+            $table->string('prenomResponsable',45);
+            $table->string('mailResponsable',45);
+            $table->string('mdpResponsable',45);
+            $table->string('telResponsable',45);
+
+
             $table->timestamps();
         });
     }

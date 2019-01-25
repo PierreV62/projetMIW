@@ -17,7 +17,7 @@ class CreateCategorieTable extends Migration
             $table->increments('idCategorie');
             $table->string('libelleCategorie',45);
             $table->integer('idType')->unsigned();
-            $table->foreign('idType')->references('idType')->on('types');
+            $table->foreign('idType')->references('idType')->on('type');
             $table->timestamps();
         });
     }
