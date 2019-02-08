@@ -27,8 +27,8 @@ class CreateMagasinTable extends Migration
             $table->foreign('idCategorie')->references('idCategorie')->on('categorie');
             $table->integer('idType')->unsigned();
             $table->foreign('idType')->references('idType')->on('type');
-            $table->integer('idville')->unsigned();
-            $table->foreign('idville')->references('idville')->on('ville');
+            $table->integer('idVille')->unsigned();
+            $table->foreign('idVille')->references('idVille')->on('ville');
             $table->integer('idResponsable')->unsigned();
             $table->foreign('idResponsable')->references('idResponsable')->on('responsable');
 

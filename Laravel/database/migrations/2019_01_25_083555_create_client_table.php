@@ -22,8 +22,8 @@ class CreateClientTable extends Migration
             $table->string('mailClient',45);
             $table->string('mdpClient',45);
             $table->string('adresseClient',45);
-            $table->integer('idville')->unsigned();
-            $table->foreign('idville')->references('idville')->on('ville');
+            $table->integer('idVille')->unsigned();
+            $table->foreign('idVille')->references('idVille')->on('ville');
 
             $table->timestamps();
         });

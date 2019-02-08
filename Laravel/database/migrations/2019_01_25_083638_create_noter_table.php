@@ -14,7 +14,7 @@ class CreateNoterTable extends Migration
     public function up()
     {
         Schema::create('noter', function (Blueprint $table) {
-            $table->increments('codeAvis');
+            $table->increments('idAvis');
             $table->string('commentaire',75);
             $table->string('note',1);
             $table->integer('idClient')->unsigned();

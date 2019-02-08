@@ -14,7 +14,7 @@ class CreateAvisTable extends Migration
     public function up()
     {
         Schema::create('avis', function (Blueprint $table) {
-            $table->increments('codeAvis');
+            $table->increments('idAvis');
             $table->string('code',45);
             $table->timestamps();
         });
