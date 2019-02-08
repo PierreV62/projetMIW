@@ -27,3 +27,12 @@ Route::get('/user/list', 'PagesController@getUserList')->name('users_list');
 Route::get('/role/{role_id?}','RightsController@getRole')->name('role');
 
 Route::get('/role/list','RightsController@getRolesList')->name('role_list');
+
+Auth::routes();
+
+Route::get('/redirect', 'SocialAuthGoogleController@redirect');
+Route::get('/callback', 'SocialAuthGoogleController@callback');
+
+
+
+Route::get('/home', 'HomeController@index')->name('home');
