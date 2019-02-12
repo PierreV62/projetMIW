@@ -15,15 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
 
-Route::get('/test/{name?}','PagesController@test');
+Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/serie/{serie_id?}','SeriesController@getSerie')->name("serie");
+Route::get('/contact',function(){
 
-Route::get('/season/{season_id?}','SeriesController@getSeason')->name("season");
+    return view('contact');
+});
 
-Route::get('/user/list', 'PagesController@getUserList')->name('users_list');
 
-Route::get('/role/{role_id?}','RightsController@getRole')->name('role');
-
-Route::get('/role/list','RightsController@getRolesList')->name('role_list');
