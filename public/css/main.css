@@ -1,0 +1,86 @@
+.menuElem{
+    width: 183.08px
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+.menu-option{
+
+    text-align: center;
+    border-right: solid 2px white;
+}
+
+.formulaire-insc{
+    position: fixed;
+    top:25%;
+    left:35%;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.headerForm{
+    
+    display:flex;
+
+}
+
+.divTextForm{
+    width: 50%;
+    text-align: center;
+}
+.borderWhite-R{
+    border-right: solid 2px white;
+}
+
+.borderWhite-B{
+    border-bottom: solid 2px white;
+}
+
+.vanish{
+    display: none;
+}
+
+.divBackground{
+    display: none;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background-color: rgba(0 ,255,202, 0.2);
+}
+
+.fermerInsc{
+    width: 20px;
+    height: 20px;
+    margin-left:3%; 
+}
+
+.container{
+    width: 100%;
+}
+ .form-header{
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    border: solid 2px #8bc34a;
+    border-radius: 2px;
+ }
+
+
+
+
+
+@media all and (max-width:991px)
+{
+    .menu-option{
+        border-right: none;
+        text-align: start;
+    }
+    li{
+        width: 100%;
+    }
+}
