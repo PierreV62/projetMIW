@@ -1,3 +1,15 @@
+.content{
+    margin-top:10%;
+}
+
+.menuFixed{
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index: 9;
+}
+
 .menuElem{
     width: 183.08px
 }
@@ -59,9 +71,6 @@
     margin-left:3%; 
 }
 
-.container{
-    width: 100%;
-}
  .form-header{
     width: 50%;
     text-align: center;
@@ -69,13 +78,69 @@
     border: solid 2px #8bc34a;
     border-radius: 2px;
  }
+.containerAcceuil{
+    width: 100%;
+    display:flex;
+    margin-top:2%;
 
+}
 
+.coloneGauche{
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:2%;
+    margin-right:2%;
+}
 
+.videoPresentation{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 2%;
 
+}
+
+.aPropos{
+    color:white;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    padding-left:2%;
+    padding-right: 2%; 
+}
+
+.coloneDroite{
+    width:59%;
+    border-radius: 5px;
+    margin-right: 2%;
+}
+
+.Pied2Page{
+    margin-top:5%;
+    background-color: white;
+}
+
+.descriptifCarte{
+    display: flex;
+    justify-content: space-around;
+    color:white;
+}
+.descriptifCarteItem{
+    display: flex;
+    flex-direction: column;
+}
+h5{
+    font-weight: bold;
+    margin-top:2%;
+    text-align: center;
+    color:white;
+}
 
 @media all and (max-width:991px)
 {
+    .content{
+        margin-top: 15%;
+    }
     .menu-option{
         border-right: none;
         text-align: start;
@@ -83,4 +148,49 @@
     li{
         width: 100%;
     }
+    .formulaire-insc{
+
+        width: 60%;
+        top:5%;
+        left:20%;
+    }
+
 }
+
+@media all and (max-width:600px)
+{
+    .content{
+        margin-top: 25%;
+    }
+    .menu-option{
+        border-right: none;
+        text-align: start;
+    }
+    li{
+        width: 100%;
+    }
+    .formulaire-insc{
+
+        width: 90%;
+        top:1%;
+        left:5%;
+
+    }
+    .containerAcceuil{
+        flex-wrap: wrap;
+    }
+    .coloneGauche{
+        width: 100%;
+    }
+    .coloneDroite{
+        width: 100%;
+    }
+    .videoPresentation{
+        width: 90%;
+        margin-left:5%;
+        height: 250px;
+    }
+
+}
+
+
