@@ -17,12 +17,11 @@
 </head>
 <body>
     @include ('layouts.header')
-    <div class="container">
+    <div class="content">
         @yield ('content')
     </div>
-    
     @include('layouts.connection-inscription')
-
+    @include('layouts.footer')
 
 </body>
 <!-- JQuery -->

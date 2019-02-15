@@ -1,5 +1,5 @@
 <!--Navbar -->
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark green">
+<nav id="header" class="mb-1 navbar navbar-expand-lg navbar-dark green menuFixed">
   <a class="navbar-brand" href="/">
     <img src="/img/logoBlanc.png" class="logo" alt="logo"> 
   </a>

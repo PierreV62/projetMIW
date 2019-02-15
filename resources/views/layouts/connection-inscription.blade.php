@@ -107,16 +107,6 @@
                         <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
                         <label for="materialRegisterFormPassword">Password</label>
                         <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-                            At least 8 characters and 1 digit
-                        </small>
-                    </div>
-
-                    <!-- Phone number -->
-                    <div class="md-form">
-                        <input type="password" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
-                        <label for="materialRegisterFormPhone">Phone number</label>
-                        <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-                            Optional - for two step authentication
                         </small>
                     </div>
 
@@ -127,7 +117,7 @@
                     </div>
 
                     <!-- Sign up button -->
-                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+                    <button class="btn green btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
 
                     <!-- Social register -->
                     <p>or sign up with:</p>
@@ -135,17 +125,10 @@
                     <a type="button" class="btn-floating btn-fb btn-sm">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a type="button" class="btn-floating btn-tw btn-sm">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a type="button" class="btn-floating btn-li btn-sm">
-                        <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a type="button" class="btn-floating btn-git btn-sm">
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-google"></i>
                     </a>
-
-                    <hr>
 
                     <!-- Terms of service -->
                     <p>By clicking

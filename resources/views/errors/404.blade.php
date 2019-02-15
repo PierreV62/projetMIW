@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <img src="">
+    <div>
+        <img src="">
+    </div>
 @endsection
