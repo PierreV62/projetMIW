@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ExoProjet</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+</head>
+<body onload="">
+<input list="ville" onkeyup="keyup(value)" onchange="center()">
+
+<datalist id="ville">
+</datalist>
+
+
+<div id="map"></div>
+</body>
+<script>
+    console.log(navigator.geolocation.getCurrentPosition((pos) => {
+        console.log(pos.coords.latitude, pos.coords.longitude)
+    }));
+</script>
+
+
+<script src="script.js"></script>
+</html>
